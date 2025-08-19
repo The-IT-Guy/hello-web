@@ -2,8 +2,8 @@
   --bg: #00005b;
   --fg: #ffffff;
   --muted: #a14e4e;
-  --accent: #505550;
-  --brand: #505550;
+  --accent: #6ee7ff;
+  --brand: #0d6efd;
   --container: 1100px;
   --radius: 14px;
   --shadow: 0 10px 30px rgba(127, 18, 154, 0.25);
@@ -106,3 +106,18 @@ body {
   .nav { display: none; }
   .container { padding-inline: 1rem; }
 }
+
+.services .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius);
+  padding: 1rem 1.1rem;
+  box-shadow: var(--shadow);
+}
+.card h3 { margin: 0 0 .35rem 0; }
+.card p { color: var(--muted); margin: 0; }
