@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hello Web — Day 1</title>
+  <meta name="description" content="A tiny responsive landing page for Day 1 of Front-End Bootcamp." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#home" aria-label="Go to top">Hello Web<span class="dot">.</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#links">Links</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title">Hi, I’m <span class="accent">Jeff "The IT Guy" Lemons</span> 👋</h1>
+        <p class="lead">Day 1 of my Front‑End Bootcamp. Clean HTML, modern CSS, and small, shippable steps.</p>
+        <p>
+          <a class="btn" href="#links">See my links</a>
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="about section" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">About Me</h2>
+        <p>At this time I'm a freelance web developer. I'm working to gain skills in web development. As I depend heavily on AI for 99% of my coding. I want to get away from AI.
+        I'm also an IT consultant for SMB and residential.
+        </p>
+      </div>
+    </section>
+
+    <section id="links" class="links section" aria-labelledby="links-title">
+      <div class="container">
+        <h2 id="links-title">Links</h2>
+        <ul class="link-list">
+          <li><a href="https://github.com/The-IT-Guy" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="calltheitguy.tech" target="_blank" rel="noopener">The IT Guy</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© <span id="year"></span> Your Name — Built on Day 1</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
