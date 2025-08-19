@@ -135,3 +135,22 @@ body {
 }
 .card h3 { margin: 0 0 .35rem 0; }
 .card p { color: var(--muted); margin: 0; }
+
+/* Polish Pack — spacing, focus, anchors, buttons */
+:root { --space: clamp(0.8rem, 1.2vw, 1.25rem); }
+
+.container { max-width: 960px; }               /* tighter line length */
+.section { padding-block: calc(var(--space) * 2.5); }
+.hero { padding-block: clamp(3rem, 8vw, 7rem); }
+
+h1, h2 { letter-spacing: .2px; }
+[id] { scroll-margin-top: 80px; }              /* anchors account for sticky header */
+
+a { transition: color .2s ease, background .2s ease, transform .15s ease; }
+.btn:hover { transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
+
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
